@@ -1,0 +1,30 @@
+*{
+    border: 1px solid #E1EFDD;
+    border-collapse: collapse;
+}
+#calculator{
+    height: 400px;
+    width: 330px;
+    background-color: #61B34F;
+}
+.top{
+    display: flex;
+}
+.clear{
+    flex: 1;
+    width: 25%;
+    height: 80px;
+    font-size: 36px;
+}
+.screen{
+    flex: 3;
+}
+.keys{
+    display: flex;
+    flex-wrap: wrap;
+}
+.keys span{
+    flex: 1 0 20%;
+    height: 77px;
+    font-size: 36px;
+}
