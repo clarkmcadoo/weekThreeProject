@@ -1,25 +1,24 @@
 var numbers = document.querySelectorAll("#calculator span");
-var calculatorDisplay = document.querySelector(".screen");
-// calculatorDisplay.textContent = "hippo";
-// var displayContent = ""
-// numbers.addEventListener("click", addNumberToDisplay);
+var screen = document.querySelector(".screen");
+var evaluatedDisplay;
 
-calculatorDisplay = "";
-
+screen.textContent = "";
+// THIS MAKES ALL BUTTONS ON CALC CLICKABLE
 for (i=0; i<numbers.length; i++){
     numbers[i].addEventListener("click", addNumberToDisplay)
-
 }
-
+// THIS IS THE BRAINS OF THE CALCULATOR
 function addNumberToDisplay(){
-    console.log(event);
-    console.log(event.target);
     var content = event.target.textContent;
-    calculatorDisplay += content;
-    console.log('displayContent: ', calculatorDisplay);
-    // calculatorDisplay.innerHTML = displayContent;
-    return calculatorDisplay;
-        // calculatorDisplay.textContent = numbers[i].textContent;
+    if (content == "="){
+        // res = str.replace("Microsoft", "W3Schools");
+
+        evaluatedDisplay = eval(screen.textContent);
+        screen.textContent = evaluatedDisplay;
+        return evaluatedDisplay;
+    }else{   
+    screen.textContent += content;        
+    }
     }
 
 
