@@ -15,6 +15,7 @@
     width: 25%;
     height: 80px;
     font-size: 36px;
+    text-align: center;
 }
 .screen{
     flex: 3;
