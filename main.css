@@ -27,4 +27,19 @@
     flex: 1 0 20%;
     height: 77px;
     font-size: 36px;
+    text-align: center;
 }
+.keys span:hover{
+    background-color: #91c485;
+}
+.operator{
+    background-color: #86C47B;
+}
+.operator:hover, .clear:hover, .eval:hover{
+    color: white;
+
+    
+}
+
+
+
