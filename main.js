@@ -12,10 +12,12 @@ function addNumberToDisplay(){
     var content = event.target.textContent;
     if (content == "="){
         // res = str.replace("Microsoft", "W3Schools");
-
+        
         evaluatedDisplay = eval(screen.textContent);
         screen.textContent = evaluatedDisplay;
         return evaluatedDisplay;
+    }else if (content == "C"){
+        screen.textContent = "";
     }else{   
     screen.textContent += content;        
     }
